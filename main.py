@@ -7,9 +7,17 @@ def menu():
 
   print("1 - Get the Weather Data")
   print("2 - Exit ")
-  
+
   choice = input("Enter your choose: ")
   return choice
+
+def get_location():
+  city_name = input("Enter the city´s name that you want: ")
+
+  country_code = input("Enter the country code (example: BR, US, GB): ")
+
+  return city_name, country_code
+
 
 
 def main():
@@ -17,7 +25,11 @@ def main():
   while True:
     users_choice = menu()
     if users_choice == "1":
-      continue
+      city_name, country_code = get_location()
+      data = api_request(city_name, country_code)
+      if data:
+        print(f"City: {data['name']}")
+
     elif users_choice == "2":
       print("Bye...")
       break
