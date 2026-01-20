@@ -30,7 +30,10 @@ def main():
       data = api_request(city_name, country_code)
       if data:
        clean_data = weather_data(data)
-       print(clean_data)
+       print(f"City: {clean_data["city"]}")
+       print(f"Country: {clean_data["country"]}")
+       print(f"Weather: {clean_data["weather"]}")
+       print(f"Temp: {clean_data["temperature"]}")
   
 
     elif users_choice == "2":
