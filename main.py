@@ -1,4 +1,5 @@
 from api_service import api_request
+from utils import weather_data
 
 def menu():
   print("="*50)
@@ -28,7 +29,9 @@ def main():
       city_name, country_code = get_location()
       data = api_request(city_name, country_code)
       if data:
-        print(f"City: {data['name']}")
+       clean_data = weather_data(data)
+       print(clean_data)
+  
 
     elif users_choice == "2":
       print("Bye...")
