@@ -8,7 +8,7 @@ def data_done(new_data):
     with open(filename, "r") as file:
       try:
         data = json.load(file)
-      except json.JSONDecodeError:
+      except (FileNotFoundError, json.JSONDecodeError):
         data = []
   else:
     data = [] 
