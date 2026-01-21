@@ -1,0 +1,26 @@
+[
+  {
+    "city": "S\u00e3o Paulo",
+    "country": "BR",
+    "weather": "Clouds",
+    "temperature": 291.21
+  },
+  {
+    "city": "London",
+    "country": "US",
+    "weather": "Clouds",
+    "temperature": 275.26
+  },
+  {
+    "city": "S\u00e3o Paulo",
+    "country": "BR",
+    "weather": "Clouds",
+    "temperature": 291.21
+  },
+  {
+    "city": "Canada",
+    "country": "US",
+    "weather": "Clear",
+    "temperature": 284.03
+  }
+]
