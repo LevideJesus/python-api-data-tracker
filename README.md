@@ -14,7 +14,7 @@ A **Python command-line application** that allows you to check the weather for a
 ## 📖 Demo
 
 
-Welcome to the Weather Tracker
+## Welcome to the Weather Tracker
 
 1 - Get the Weather Data
 2 - Show History
@@ -35,7 +35,7 @@ History Example:
 City: São Paulo, Country: BR, Weather: Clouds, Temp: 18.2°C
 City: London, Country: GB, Weather: Rain, Temp: 12.5°C
 
-##🚀 Installation
+## 🚀 Installation
 
 1. Clone the repository:
 
@@ -69,21 +69,7 @@ python main.py
 
 ========================================================================
 
-📂 Project Structure:
-
-weather-tracker/
-│
-├─ main.py            # Main CLI program
-├─ api_service.py     # Handles API requests
-├─ utils.py           # Cleans and formats API data
-├─ json_service.py    # Saves and loads history
-├─ .env               # API key environment variables
-├─ requirements.txt   # Python dependencies
-└─ weather_history.json # Stores search history
-
-=============================================================================
-
-📊 Data Format:
+## 📊 Data Format:
 {
   "city": "São Paulo",
   "country": "BR",
@@ -92,7 +78,7 @@ weather-tracker/
 }
 
 ===========================================================================
-🛠️ Requirements
+## 🛠️ Requirements
   - Python 3.x
 
   - requests
